@@ -85,12 +85,10 @@ class Student:
 
     #     print functions
     def printAverageOfSubject(self, subjectName):
-        return "{} got an average of {:.2f} in '{}'".format(self.studentName, self.calcAverageOfSubject(subjectName),
-                                                            subjectName)
+        return "{} got an average of {:.2f} in '{}'".format(self.studentName, self.calcAverageOfSubject(subjectName), subjectName)
 
     def printAverageOfAllSubject(self):
-        return "{} got a total average of {:.2f}".format(self.studentName,
-                                                         self.calcAverageOfAllSubjects())
+        return "{} got a total average of {:.2f}".format(self.studentName, self.calcAverageOfAllSubjects())
 
 
 if __name__ == '__main__':
@@ -133,25 +131,26 @@ if __name__ == '__main__':
 
     print('pre-add')
     print(st1.printAverageOfAllSubject())
-    print(st1.printAverageOfSubject("history"))
-    print(st1.printAverageOfSubject("math"))
-    print(st1.printAverageOfSubject("biology"))
+
+    print(st1.printAverageOfSubject("History"))
+    print(st1.printAverageOfSubject("Math"))
+    print(st1.printAverageOfSubject("Biology"))
     st1.findKBestSubject(3)
 
-    st1.addNewGradeToSubject(gradeObj=Grade(gradeValue=50, gradeWeight=2), subjectName="math")
-    st1.addNewGradeToSubject(gradeObj=Grade(gradeValue=99, gradeWeight=3), subjectName="math")
+    st1.addNewGradeToSubject(gradeObj=Grade(gradeValue=50, gradeWeight=2), subjectName="Math")
+    st1.addNewGradeToSubject(gradeObj=Grade(gradeValue=99, gradeWeight=3), subjectName="Math")
 
     print('post-add')
     print(st1.printAverageOfAllSubject())
-    print(st1.printAverageOfSubject("history"))
-    print(st1.printAverageOfSubject("math"))
-    print(st1.printAverageOfSubject("biology"))
+    print(st1.printAverageOfSubject("History"))
+    print(st1.printAverageOfSubject("Math"))
+    print(st1.printAverageOfSubject("Biology"))
 
-    st2.addNewGradeToSubject(gradeObj=Grade(gradeValue=99, gradeWeight=3), subjectName="chemistry")
-    st2.addNewGradeToSubject(gradeObj=Grade(gradeValue=99, gradeWeight=3), subjectName="chemistry")
+    st2.addNewGradeToSubject(gradeObj=Grade(gradeValue=99, gradeWeight=3), subjectName="Chemistry")
+    st2.addNewGradeToSubject(gradeObj=Grade(gradeValue=99, gradeWeight=3), subjectName="Chemistry")
 
     print(st2.printAverageOfAllSubject())
-    print(st2.printAverageOfSubject("chemistry"))
+    print(st2.printAverageOfSubject("Chemistry"))
 
     st1.findKBestSubject(3)
 
