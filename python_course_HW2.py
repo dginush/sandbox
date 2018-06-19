@@ -153,7 +153,7 @@ if __name__ == '__main__':
     print(st2.printAverageOfSubject("Chemistry"))
 
     st1.findKBestSubject(3)
-
+    # n
     print(gr1)
 
     print('')
